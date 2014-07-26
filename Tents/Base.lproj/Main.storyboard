@@ -289,11 +289,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" id="6GY-Cf-Tm5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.69999999999999973" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QGq-lv-wIi">
-                                <rect key="frame" x="20" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.9964878559" green="0.084739963500000001" blue="0.1608120438" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QGq-lv-wIi">
+                                <rect key="frame" x="30" y="152" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
-                                <state key="normal" title="赤">
+                                <state key="normal" title="赤" backgroundImage="red.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -301,11 +300,10 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="4Dg-rJ-Ehr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-9h-6U1">
-                                <rect key="frame" x="100" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.46274513010000001" green="0.88235300780000003" blue="0.67058825489999996" alpha="1" colorSpace="deviceRGB"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-9h-6U1">
+                                <rect key="frame" x="102" y="152" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
-                                <state key="normal" title="緑">
+                                <state key="normal" title="緑" backgroundImage="green.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -313,12 +311,11 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="ada-8V-Tzf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Ve-w6-vDN">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Ve-w6-vDN">
                                 <rect key="frame" x="175" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="青">
+                                <state key="normal" title="青" backgroundImage="blue.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -326,12 +323,11 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="oka-9H-5Ax"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jjQ-UW-BPR">
-                                <rect key="frame" x="250" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jjQ-UW-BPR">
+                                <rect key="frame" x="248" y="152" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="白">
+                                <state key="normal" title="白" backgroundImage="white.png">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -339,11 +335,10 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="dP9-0L-hYk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9sb-pS-Ol7">
-                                <rect key="frame" x="20" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9sb-pS-Ol7">
+                                <rect key="frame" x="65" y="212" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
-                                <state key="normal" title="黄色">
+                                <state key="normal" title="黄色" backgroundImage="yellow.png">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -351,11 +346,10 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="8Nq-M4-EH5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="reb-Zz-aqP">
-                                <rect key="frame" x="100" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="reb-Zz-aqP">
+                                <rect key="frame" x="135" y="212" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
-                                <state key="normal" title="ピンク">
+                                <state key="normal" title="ピンク" backgroundImage="pink.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -363,11 +357,10 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="d9m-Nn-gTI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999973" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NWV-Ny-efR">
-                                <rect key="frame" x="175" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NWV-Ny-efR">
+                                <rect key="frame" x="214" y="212" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
-                                <state key="normal" title="水色">
+                                <state key="normal" title="水色" backgroundImage="water.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -375,23 +368,22 @@
                                     <action selector="onTouchColorBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="Xba-PS-Jqf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FU6-mK-kBE">
-                                <rect key="frame" x="47" y="105" width="85" height="39"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FU6-mK-kBE">
+                                <rect key="frame" x="117" y="105" width="85" height="39"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pattern" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ia1-sF-GP8">
-                                <rect key="frame" x="47" y="277" width="85" height="39"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pattern" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ia1-sF-GP8">
+                                <rect key="frame" x="118" y="277" width="85" height="39"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQT-6h-21Y">
-                                <rect key="frame" x="55" y="324" width="209" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" alpha="0.69999999999999973" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQT-6h-21Y">
+                                <rect key="frame" x="74" y="324" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Solid">
+                                <state key="normal" title="Solid" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -399,11 +391,10 @@
                                     <action selector="onTouchPatternBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="Nf0-Z7-AAd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dg2-PN-atW">
-                                <rect key="frame" x="55" y="382" width="209" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" alpha="0.69999999999999973" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dg2-PN-atW">
+                                <rect key="frame" x="74" y="382" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Flush">
+                                <state key="normal" title="Flush" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -411,11 +402,10 @@
                                     <action selector="onTouchPatternBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="TK2-1f-GGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UxG-ub-ZZ6">
-                                <rect key="frame" x="55" y="440" width="209" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" alpha="0.69999999999999973" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UxG-ub-ZZ6">
+                                <rect key="frame" x="74" y="440" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Fade">
+                                <state key="normal" title="Fade" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -423,11 +413,10 @@
                                     <action selector="onTouchPatternBtn:" destination="HNy-lZ-Mwj" eventType="touchUpInside" id="Y6K-C6-0qb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1zB-yp-D5F">
-                                <rect key="frame" x="56" y="498" width="209" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" alpha="0.69999999999999973" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1zB-yp-D5F">
+                                <rect key="frame" x="74" y="498" width="169" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Rotation">
+                                <state key="normal" title="Rotation" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -635,6 +624,8 @@
     <resources>
         <image name="arw.png" width="178" height="336"/>
         <image name="bg.png" width="640" height="1136"/>
+        <image name="blue.png" width="151" height="151"/>
+        <image name="btn.png" width="452" height="151"/>
         <image name="btn01.png" width="96" height="96"/>
         <image name="btn02.png" width="296" height="80"/>
         <image name="btn_back.png" width="56" height="56"/>
@@ -642,10 +633,16 @@
         <image name="campas1-04sl_11.png" width="436" height="96"/>
         <image name="circle_back.png" width="530" height="530"/>
         <image name="edit.png" width="140" height="140"/>
+        <image name="green.png" width="150" height="151"/>
         <image name="home.png" width="140" height="140"/>
         <image name="light.png" width="140" height="140"/>
         <image name="line.png" width="1" height="82"/>
+        <image name="pink.png" width="151" height="151"/>
+        <image name="red.png" width="151" height="151"/>
+        <image name="water.png" width="151" height="151"/>
         <image name="weather.png" width="246" height="200"/>
+        <image name="white.png" width="151" height="151"/>
+        <image name="yellow.png" width="151" height="151"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
