@@ -290,7 +290,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QGq-lv-wIi">
-                                <rect key="frame" x="30" y="152" width="50" height="50"/>
+                                <rect key="frame" x="32" y="121" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <state key="normal" title="赤" backgroundImage="red.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,7 +301,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-9h-6U1">
-                                <rect key="frame" x="102" y="152" width="50" height="50"/>
+                                <rect key="frame" x="104" y="121" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <state key="normal" title="緑" backgroundImage="green.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,7 +312,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Ve-w6-vDN">
-                                <rect key="frame" x="175" y="152" width="50" height="50"/>
+                                <rect key="frame" x="177" y="121" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="青" backgroundImage="blue.png">
@@ -324,7 +324,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jjQ-UW-BPR">
-                                <rect key="frame" x="248" y="152" width="50" height="50"/>
+                                <rect key="frame" x="250" y="121" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="白" backgroundImage="white.png">
@@ -336,7 +336,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9sb-pS-Ol7">
-                                <rect key="frame" x="65" y="212" width="50" height="50"/>
+                                <rect key="frame" x="67" y="181" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <state key="normal" title="黄色" backgroundImage="yellow.png">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -347,7 +347,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="reb-Zz-aqP">
-                                <rect key="frame" x="135" y="212" width="50" height="50"/>
+                                <rect key="frame" x="137" y="181" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <state key="normal" title="ピンク" backgroundImage="pink.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,7 +358,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NWV-Ny-efR">
-                                <rect key="frame" x="214" y="212" width="50" height="50"/>
+                                <rect key="frame" x="216" y="181" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                 <state key="normal" title="水色" backgroundImage="water.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -369,19 +369,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FU6-mK-kBE">
-                                <rect key="frame" x="117" y="105" width="85" height="39"/>
+                                <rect key="frame" x="119" y="74" width="85" height="39"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pattern" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ia1-sF-GP8">
-                                <rect key="frame" x="118" y="277" width="85" height="39"/>
+                                <rect key="frame" x="120" y="246" width="85" height="39"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.69999999999999973" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQT-6h-21Y">
-                                <rect key="frame" x="74" y="324" width="170" height="50"/>
+                                <rect key="frame" x="76" y="293" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Solid" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -392,7 +392,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.69999999999999973" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dg2-PN-atW">
-                                <rect key="frame" x="74" y="382" width="170" height="50"/>
+                                <rect key="frame" x="76" y="351" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Flush" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -403,7 +403,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.69999999999999973" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UxG-ub-ZZ6">
-                                <rect key="frame" x="74" y="440" width="170" height="50"/>
+                                <rect key="frame" x="76" y="409" width="170" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Fade" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -414,7 +414,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.69999999999999973" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1zB-yp-D5F">
-                                <rect key="frame" x="74" y="498" width="169" height="50"/>
+                                <rect key="frame" x="76" y="467" width="169" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Rotation" backgroundImage="btn.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
