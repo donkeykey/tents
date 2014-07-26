@@ -41,6 +41,19 @@
     NSLog(@"second view");
     _functionManager = [[FunctionManager alloc]init];
     _isLightON = NO;
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    //東京駅をデフォルトにする
+//    [ud setDouble:35.681382 forKey:@"destinationLatitude"];
+//    [ud setDouble:139.766084 forKey:@"destinationLongitude"];
+    //六本木一丁目
+//    [ud setDouble:35.665595 forKey:@"destinationLatitude"];
+//    [ud setDouble:139.739 forKey:@"destinationLongitude"];
+    //青山一丁目
+//    [ud setDouble:35.672765 forKey:@"destinationLatitude"];
+//    [ud setDouble:139.724159 forKey:@"destinationLongitude"];
+    //六本木
+    [ud setDouble:35.662836 forKey:@"destinationLatitude"];
+    [ud setDouble:139.731443 forKey:@"destinationLongitude"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,13 +69,12 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     CLLocation *newLocation = [[CLLocation alloc]initWithLatitude:[LocationManager sharedManager].lat longitude:[LocationManager sharedManager].lon];
     CLLocation *destinationLocation = [[CLLocation alloc]initWithLatitude:[ud doubleForKey:@"destinationLatitude"] longitude:[ud doubleForKey:@"destinationLongitude"]];
-    //六本木一丁目
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.665595 longitude:139.739];
-    //青山一丁目
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.672765 longitude:139.724159];
-    //六本木
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.662836 longitude:139.731443];
     CLLocationDistance tmpDistance = [destinationLocation distanceFromLocation:newLocation];
+    double tmp1 = newLocation.coordinate.latitude;
+    double tmp2 = newLocation.coordinate.longitude;
+    double tmp3 = destinationLocation.coordinate.latitude;
+    double tmp4 = destinationLocation.coordinate.longitude;
+    NSLog(@"(%lf,%lf)->(%lf,%lf)",tmp1,tmp2,tmp3,tmp4);
     if (tmpDistance > 1000) {
         NSLog(@"%3.0lfkm",tmpDistance/1000);
         _distanceLabel.text =[NSString stringWithFormat:@"%3.0lf",tmpDistance/1000];
@@ -79,14 +91,8 @@
     LocationManager *lm = [LocationManager sharedManager];
     CLLocationCoordinate2D tmpCoordinate = CLLocationCoordinate2DMake(lm.lat ,lm.lon);
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    CLLocation *destinationLocation = [[CLLocation alloc]initWithLatitude:[ud doubleForKey:@"startLatitude"] longitude:[ud doubleForKey:@"startLongtitude"]];
+    CLLocation *destinationLocation = [[CLLocation alloc]initWithLatitude:[ud doubleForKey:@"destinationLatitude"] longitude:[ud doubleForKey:@"destinationLongitude"]];
 
-    //六本木一丁目
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.665595 longitude:139.739];
-    //青山一丁目
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.672765 longitude:139.724159];
-    //六本木
-//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.662836 longitude:139.731443];
     
     CLLocationDirection tmpDirection =[self CalculateAngle:tmpCoordinate.latitude :tmpCoordinate.longitude :destinationLocation.coordinate.latitude :destinationLocation.coordinate.longitude ];
     //アニメーションでコンパスを回転する
@@ -96,17 +102,7 @@
     _compassView.layer.transform = transform;
     
     //ついでに距離も更新する
-    CLLocation *newLocation = [[CLLocation alloc]initWithLatitude:[LocationManager sharedManager].lat longitude:[LocationManager sharedManager].lon];
-    CLLocationDistance tmpDistance = [destinationLocation distanceFromLocation:newLocation];
-    if (tmpDistance > 1000) {
-        NSLog(@"%3.0lfkm",tmpDistance/1000);
-        _distanceLabel.text =[NSString stringWithFormat:@"%3.0lf",tmpDistance/1000];
-        _meterLabel.text = @"km";
-    }else{
-        NSLog(@"%3.0lfm",tmpDistance);
-        _distanceLabel.text = [NSString stringWithFormat:@"%3.0lf",tmpDistance];
-        _meterLabel.text = @"m";
-    }
+    [self updateLocationInfomation];
 }
 
 -(float) CalculateAngle:(float) nLat1 :(float) nLon1 :(float) nLat2 :(float) nLon2
