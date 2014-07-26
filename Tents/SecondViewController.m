@@ -8,10 +8,14 @@
 
 #import "SecondViewController.h"
 #import "LocationManager.h"
+#import "FunctionManager.h"
 
 @interface SecondViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *compassView;
-
+- (IBAction)cameraButton:(id)sender;
+- (IBAction)lightButton:(id)sender;
+@property FunctionManager* functionManager;
+@property BOOL isLightON;
 
 @end
 
@@ -35,6 +39,8 @@
     //self.locManager.delegate = self;
     self.navigationController.navigationBarHidden = YES;
     NSLog(@"second view");
+    _functionManager = [[FunctionManager alloc]init];
+    _isLightON = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -271,4 +277,18 @@
 }
 
 
+- (IBAction)cameraButton:(id)sender {
+    [_functionManager startCamera:self];
+}
+
+- (IBAction)lightButton:(id)sender {
+    if (_isLightON) {
+        [_functionManager stopLight];
+        _isLightON = NO;
+    } else {
+        [_functionManager startLight];
+        _isLightON = YES;
+    }
+    
+}
 @end
