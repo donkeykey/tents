@@ -16,6 +16,7 @@
 - (IBAction)lightButton:(id)sender;
 @property FunctionManager* functionManager;
 @property BOOL isLightON;
+@property (weak, nonatomic) IBOutlet UIButton *findTentButton;
 
 @end
 
@@ -298,7 +299,7 @@
 }
 
 - (void)konashiNotConnected{
-    self.lightingTentBtn.enabled = NO;
+    self.lightingTentBtn.enabled = YES;
 }
 
 

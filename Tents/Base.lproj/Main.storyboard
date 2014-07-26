@@ -147,7 +147,7 @@
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yk5-IA-4Oa">
                                 <rect key="frame" x="75" y="385" width="176" height="44"/>
-                                <state key="normal" backgroundImage="btn02.png">
+                                <state key="normal" backgroundImage="btn_on_03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -156,7 +156,7 @@
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YIu-7f-qup">
                                 <rect key="frame" x="16" y="19" width="40" height="40"/>
-                                <state key="normal" backgroundImage="btn_back.png">
+                                <state key="normal" backgroundImage="back_btn_03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -199,8 +199,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テントを光らせる" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oPd-Cl-dbz">
-                                <rect key="frame" x="98" y="396" width="161" height="22"/>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テントどこ！？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oPd-Cl-dbz">
+                                <rect key="frame" x="102" y="396" width="161" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -218,6 +218,7 @@
                     <connections>
                         <outlet property="compassView" destination="TcD-fI-OxU" id="3hQ-eB-cbN"/>
                         <outlet property="distanceLabel" destination="rli-mG-Yng" id="8ZT-NB-hoo"/>
+                        <outlet property="findTentButton" destination="yk5-IA-4Oa" id="SIa-Vx-A5g"/>
                         <outlet property="lightingTentBtn" destination="oPd-Cl-dbz" id="Idx-Fn-orX"/>
                         <outlet property="meterLabel" destination="gj2-pz-bQH" id="HlF-sc-e8e"/>
                     </connections>
@@ -491,7 +492,6 @@
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4wg-6O-Cbh">
                                 <rect key="frame" x="175" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="水色">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -504,7 +504,6 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4tk-We-trW">
                                 <rect key="frame" x="175" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="青">
@@ -518,7 +517,6 @@
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uai-qC-xic">
                                 <rect key="frame" x="250" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="白">
@@ -532,7 +530,6 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v57-d6-Zzd">
                                 <rect key="frame" x="100" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.46274513010000001" green="0.88235300780000003" blue="0.67058825489999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="緑">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -544,8 +541,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UZ5-UM-kus">
-                                <rect key="frame" x="20" y="152" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.9964878559" green="0.084739963500000001" blue="0.1608120438" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="32" y="152" width="50" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="赤">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -564,7 +560,6 @@
                             </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zez-FU-rCg">
                                 <rect key="frame" x="100" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="ピンク">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -577,7 +572,6 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h4O-O7-t7J">
                                 <rect key="frame" x="20" y="210" width="50" height="50"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="黄色">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -638,12 +632,12 @@
     </scenes>
     <resources>
         <image name="arw.png" width="178" height="336"/>
+        <image name="back_btn_03.png" width="72" height="72"/>
         <image name="bg.png" width="640" height="1136"/>
         <image name="blue.png" width="151" height="151"/>
         <image name="btn.png" width="452" height="151"/>
         <image name="btn01.png" width="96" height="96"/>
-        <image name="btn02.png" width="296" height="80"/>
-        <image name="btn_back.png" width="56" height="56"/>
+        <image name="btn_on_03.png" width="391" height="86"/>
         <image name="camera.png" width="140" height="140"/>
         <image name="campas1-04sl_11.png" width="436" height="96"/>
         <image name="circle_back.png" width="530" height="530"/>
@@ -665,6 +659,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hPB-Hg-wZo"/>
+        <segue reference="rfI-hJ-d7g"/>
     </inferredMetricsTieBreakers>
 </document>
