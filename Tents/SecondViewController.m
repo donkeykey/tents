@@ -46,14 +46,14 @@
 //    [ud setDouble:35.681382 forKey:@"destinationLatitude"];
 //    [ud setDouble:139.766084 forKey:@"destinationLongitude"];
     //六本木一丁目
-//    [ud setDouble:35.665595 forKey:@"destinationLatitude"];
-//    [ud setDouble:139.739 forKey:@"destinationLongitude"];
+    [ud setDouble:35.665595 forKey:@"destinationLatitude"];
+    [ud setDouble:139.739 forKey:@"destinationLongitude"];
     //青山一丁目
 //    [ud setDouble:35.672765 forKey:@"destinationLatitude"];
 //    [ud setDouble:139.724159 forKey:@"destinationLongitude"];
     //六本木
-    [ud setDouble:35.662836 forKey:@"destinationLatitude"];
-    [ud setDouble:139.731443 forKey:@"destinationLongitude"];
+//    [ud setDouble:35.662836 forKey:@"destinationLatitude"];
+//    [ud setDouble:139.731443 forKey:@"destinationLongitude"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,11 +98,40 @@
     //アニメーションでコンパスを回転する
     CLLocationDirection currentDir = [[LocationManager sharedManager] headDirection];
     CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DRotate(transform, -(M_PI*currentDir/180-tmpDirection), 0, 0, 1);
+    transform = CATransform3DRotate(transform, M_PI-(M_PI*currentDir/180-tmpDirection), 0, 0, 1);
     _compassView.layer.transform = transform;
-    
+    NSLog(@"あわせると%@",[self destinationDirection:M_PI-(M_PI*currentDir/180-tmpDirection)]);
+    NSLog(@"デバイスの向き%@",[self destinationDirection:M_PI*currentDir/180]);
+    NSLog(@"目的地の方向%@",[self destinationDirection:tmpDirection]);
     //ついでに距離も更新する
     [self updateLocationInfomation];
+}
+- (NSString*)destinationDirection:(double)direction
+{
+    double tmp = direction*180/M_PI;
+    if (tmp < 0) {
+        tmp+=360;
+    }else if(tmp > 360){
+        tmp-=360;
+    }
+    if (tmp >= 345 || tmp <= 15 ) {
+        return @"北";
+    }else if (tmp >= 30 && tmp <= 60){
+        return @"北東";
+    }else if (tmp >= 75 && tmp <= 105){
+        return @"東";
+    }else if (tmp >= 120 && tmp <= 150){
+        return @"南東";
+    }else if (tmp >= 165 && tmp <= 195){
+        return @"南";
+    }else if (tmp >= 210 && tmp <= 240){
+        return @"南西";
+    }else if (tmp >= 255 && tmp <= 285){
+        return @"西";
+    }else if (tmp >= 300 && tmp <= 330){
+        return @"北西";
+    }
+    return @"";
 }
 
 -(float) CalculateAngle:(float) nLat1 :(float) nLon1 :(float) nLat2 :(float) nLon2
