@@ -76,8 +76,10 @@ static LocationManager *manager = nil;
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
     NSLog(@"didUpdateHeading");
-    headCoordinate = manager.location.coordinate;
-    headDirection = newHeading.magneticHeading;
+//    headCoordinate = manager.location.coordinate;
+    lon = manager.location.coordinate.longitude;
+    lat = manager.location.coordinate.latitude;
+    headDirection = newHeading.trueHeading;
     
     if (self.delegate) {
         [self.delegate updateHeadingInformation];

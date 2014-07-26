@@ -50,6 +50,12 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     CLLocation *newLocation = [[CLLocation alloc]initWithLatitude:[LocationManager sharedManager].lat longitude:[LocationManager sharedManager].lon];
     CLLocation *destinationLocation = [[CLLocation alloc]initWithLatitude:[ud doubleForKey:@"destinationLatitude"] longitude:[ud doubleForKey:@"destinationLongitude"]];
+    //六本木一丁目
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.665595 longitude:139.739];
+    //青山一丁目
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.672765 longitude:139.724159];
+    //六本木
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.662836 longitude:139.731443];
     CLLocationDistance tmpDistance = [destinationLocation distanceFromLocation:newLocation];
     if (tmpDistance > 1000) {
         NSLog(@"%3.0lfkm",tmpDistance/1000);
@@ -64,23 +70,37 @@
 
 - (void) updateHeadingInformation{
     NSLog(@"update heading");
-    CLLocationCoordinate2D tmpCoordinate = [LocationManager sharedManager].headCoordinate;
+    LocationManager *lm = [LocationManager sharedManager];
+    CLLocationCoordinate2D tmpCoordinate = CLLocationCoordinate2DMake(lm.lat ,lm.lon);
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     CLLocation *destinationLocation = [[CLLocation alloc]initWithLatitude:[ud doubleForKey:@"startLatitude"] longitude:[ud doubleForKey:@"startLongtitude"]];
 
+    //六本木一丁目
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.665595 longitude:139.739];
+    //青山一丁目
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.672765 longitude:139.724159];
+    //六本木
+//    destinationLocation = [[CLLocation alloc]initWithLatitude:35.662836 longitude:139.731443];
     
     CLLocationDirection tmpDirection =[self CalculateAngle:tmpCoordinate.latitude :tmpCoordinate.longitude :destinationLocation.coordinate.latitude :destinationLocation.coordinate.longitude ];
     //アニメーションでコンパスを回転する
-    //[UIView beginAnimations:nil context:nil];
-    //[UIView setAnimationDuration:0.2f];
     CLLocationDirection currentDir = [[LocationManager sharedManager] headDirection];
     CATransform3D transform = CATransform3DIdentity;
     transform = CATransform3DRotate(transform, -(M_PI*currentDir/180-tmpDirection), 0, 0, 1);
     _compassView.layer.transform = transform;
-    //[UIView commitAnimations];
-    //[NSThread sleepForTimeInterval:0.1f];
-    [UIView commitAnimations];
-    //[NSThread sleepForTimeInterval:0.05f];
+    
+    //ついでに距離も更新する
+    CLLocation *newLocation = [[CLLocation alloc]initWithLatitude:[LocationManager sharedManager].lat longitude:[LocationManager sharedManager].lon];
+    CLLocationDistance tmpDistance = [destinationLocation distanceFromLocation:newLocation];
+    if (tmpDistance > 1000) {
+        NSLog(@"%3.0lfkm",tmpDistance/1000);
+        _distanceLabel.text =[NSString stringWithFormat:@"%3.0lf",tmpDistance/1000];
+        _meterLabel.text = @"km";
+    }else{
+        NSLog(@"%3.0lfm",tmpDistance);
+        _distanceLabel.text = [NSString stringWithFormat:@"%3.0lf",tmpDistance];
+        _meterLabel.text = @"m";
+    }
 }
 
 -(float) CalculateAngle:(float) nLat1 :(float) nLon1 :(float) nLat2 :(float) nLon2
