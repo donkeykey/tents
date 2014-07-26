@@ -35,8 +35,16 @@
 }
 
 - (IBAction)cameraButton:(id)sender {
-    [_functionManager startCamera:self];
+    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
     
+    // カメラが利用可能かチェック
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        
+        // インスタンスの作成
+        UIImagePickerController *cameraPicker = [[UIImagePickerController alloc] init];
+        cameraPicker.sourceType = sourceType;
+        [self presentViewController:cameraPicker animated:YES completion:nil];
+    }
 }
 
 - (IBAction)lightButton:(id)sender {
