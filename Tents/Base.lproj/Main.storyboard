@@ -61,21 +61,6 @@
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" id="hdv-NU-6EQ">
                                 <rect key="frame" x="165" y="161" width="1" height="41"/>
                             </imageView>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G1a-Dd-8MI">
-                                <rect key="frame" x="40" y="256" width="241" height="55"/>
-                                <state key="normal" backgroundImage="campas1-04sl_11.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="83a-Pq-wmu" kind="push" id="EIm-sr-nU0"/>
-                                </connections>
-                            </button>
-                            <button appearanceType="aqua" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IuQ-5L-h68">
-                                <rect key="frame" x="40" y="256" width="55" height="55"/>
-                                <state key="normal" backgroundImage="btn01.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SNg-09-SA3">
                                 <rect key="frame" x="184" y="493" width="55" height="55"/>
                                 <state key="normal" backgroundImage="light.png">
@@ -109,6 +94,14 @@
                                     <segue destination="tx6-yc-vlZ" kind="push" id="hPB-Hg-wZo"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campas1-04sl_11.png" id="DUt-zV-oOI">
+                                <rect key="frame" x="40" y="256" width="240" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn01.png" id="gOf-nc-8tQ">
+                                <rect key="frame" x="40" y="256" width="51" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -122,7 +115,7 @@
         <!--Second View Controller-->
         <scene sceneID="Qra-gV-NzW">
             <objects>
-                <viewController id="83a-Pq-wmu" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="83a-Pq-wmu" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Lt-Ho-8vq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
