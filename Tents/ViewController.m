@@ -14,6 +14,7 @@
 - (IBAction)lightButton:(id)sender;
 @property FunctionManager* functionManager;
 @property BOOL isLightON;
+@property (nonatomic) CGPoint tentButtonPosition;
 @end
 
 @implementation ViewController
@@ -63,7 +64,7 @@
     UITouch *touch = [touches anyObject];
     
     if (touch.view.tag == 5) {
-        
+        _tentButtonPosition = [touch locationInView:self.view];
     }
 }
 
@@ -71,6 +72,12 @@
 {
     UITouch *touch = [touches anyObject];
     if (touch.view.tag == 5) {
+        UIView *button = [self.view viewWithTag:5];
+        CGPoint pt = [touch locationInView:self.view];
+        
+        [button setFrame:CGRectMake(pt.x,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+        
+        _tentButtonPosition = pt;
         
     }
 }
