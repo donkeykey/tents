@@ -70,7 +70,7 @@
                                     <segue destination="83a-Pq-wmu" kind="push" id="EIm-sr-nU0"/>
                                 </connections>
                             </button>
-                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IuQ-5L-h68">
+                            <button appearanceType="aqua" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IuQ-5L-h68">
                                 <rect key="frame" x="40" y="256" width="55" height="55"/>
                                 <state key="normal" backgroundImage="btn01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

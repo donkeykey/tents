@@ -60,6 +60,18 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    UITouch *touch = [touches ]
+    UITouch *touch = [touches anyObject];
+    
+    if (touch.view.tag == 5) {
+        
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    if (touch.view.tag == 5) {
+        
+    }
 }
 @end
