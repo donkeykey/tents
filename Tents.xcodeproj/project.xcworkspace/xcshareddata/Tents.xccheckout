@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C702C7B-2327-4621-AD9E-D667189ED2C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tents</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A438167-1B49-4DF7-B8A0-C1501074E3C0</key>
+		<string>https://github.com/donkeykey/tents</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tents.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A438167-1B49-4DF7-B8A0-C1501074E3C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/donkeykey/tents</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A438167-1B49-4DF7-B8A0-C1501074E3C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A438167-1B49-4DF7-B8A0-C1501074E3C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tents</string>
+		</dict>
+	</array>
+</dict>
+</plist>
