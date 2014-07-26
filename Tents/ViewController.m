@@ -79,9 +79,11 @@
         UIView *button = [self.view viewWithTag:5];
         CGPoint pt = [touch locationInView:self.view];
         NSLog(@"差:%f",pt.x);
-        if (_tentButtonPosition.x >= 40 && _tentButtonPosition.x <= 229 && pt.x -40 >=0 && 229-pt.x >0) {
+        UILabel *label = (UILabel*)[self.view viewWithTag:6];
+        label.textColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.7];
+        if (_tentButtonPosition.x >= 0 && _tentButtonPosition.x <= 189 && pt.x -40 >=0 && 229-pt.x >0) {
             [UIView animateWithDuration:0.1f animations:^{
-                [button setFrame:CGRectMake(pt.x,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+                [button setFrame:CGRectMake(pt.x-40,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
                 
             }completion:^(BOOL finished){
                 
@@ -98,12 +100,23 @@
 -(void)viewDidDisappear:(BOOL)animated
 {
     UIView *button = [self.view viewWithTag:5];
-    [button setFrame:CGRectMake(40,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+    [button setFrame:CGRectMake(0,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+    UILabel *label = (UILabel*)[self.view viewWithTag:6];
+    label.textColor = [UIColor whiteColor];
     
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [UIView animateWithDuration:0.3f animations:^{
+        UIView *button = [self.view viewWithTag:5];
+        [button setFrame:CGRectMake(0,button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+        
+    }completion:^(BOOL finished){
+        UILabel *label = (UILabel*)[self.view viewWithTag:6];
+        label.textColor = [UIColor whiteColor];
+        
+    }];
     
 }
 @end
